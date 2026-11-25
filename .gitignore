@@ -1,0 +1,8 @@
+# Dataset bruto e derivados (regenerados pelo pipeline)
+dados/
+# Previsoes fora do fold (pesadas, regeneradas pelos scripts 05 a 13)
+resultados/previsoes/
+.venv/
+__pycache__/
+*.log
+.ipynb_checkpoints/
