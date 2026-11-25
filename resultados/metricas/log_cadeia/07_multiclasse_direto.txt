@@ -1,0 +1,44 @@
+Treino: 1,530,423 fluxos, 51 atributos, 5 folds
+
+rf_sem_balanceamento
+  fold 1/5: treino 108s, f1_macro=0.9342
+  fold 2/5: treino 111s, f1_macro=0.9645
+  fold 3/5: treino 115s, f1_macro=0.9353
+  fold 4/5: treino 117s, f1_macro=0.8439
+  fold 5/5: treino 116s, f1_macro=0.9019
+                         media  desvio_padrao
+acuracia                0.9945         0.0002
+f1_macro                0.9159         0.0460
+precisao_macro          0.9546         0.0596
+revocacao_macro         0.8953         0.0410
+especificidade_macro    0.9991         0.0000
+tss_macro               0.8943         0.0410
+tempo_treino_s        113.1776         3.7689
+tempo_previsao_s        2.4017         0.1043
+tamanho_modelo_mb     102.6968         3.8402
+
+rf_class_weight
+  fold 1/5: treino 44s, f1_macro=0.9658
+  fold 2/5: treino 42s, f1_macro=0.9870
+  fold 3/5: treino 42s, f1_macro=0.9573
+  fold 4/5: treino 42s, f1_macro=0.8975
+  fold 5/5: treino 42s, f1_macro=0.9018
+                        media  desvio_padrao
+acuracia               0.9952         0.0001
+f1_macro               0.9419         0.0401
+precisao_macro         0.9616         0.0342
+revocacao_macro        0.9327         0.0438
+especificidade_macro   0.9997         0.0000
+tss_macro              0.9323         0.0438
+tempo_treino_s        42.6083         1.0512
+tempo_previsao_s       2.3832         0.0792
+tamanho_modelo_mb     36.1388         0.8608
+
+Comparativo (media dos folds, ordenado pelo F1 macro):
+                      f1_macro  acuracia  revocacao_macro  tempo_treino_s
+rf_class_weight         0.9419    0.9952           0.9327         42.6083
+rf_sem_balanceamento    0.9159    0.9945           0.8953        113.1776
+
+McNemar entre pares:
+            modelo_a        modelo_b  so_a_acerta  so_b_acerta  estatistica      p_valor  diferenca_acuracia
+rf_sem_balanceamento rf_class_weight         1878         2935   231.692499 2.548252e-52           -0.000691

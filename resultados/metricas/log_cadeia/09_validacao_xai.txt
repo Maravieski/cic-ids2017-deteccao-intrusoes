@@ -1,0 +1,82 @@
+Amostra: 2893 fluxos de 382,606
+                       comparacao  n_atributos  spearman  p_valor
+   SHAP x |correlacao com o alvo|           48  0.600630 0.000006
+SHAP x enriquecimento de outliers            9 -0.133333 0.732368
+
+Top 15 atributos (SHAP, estagio 1):
+Bwd Packet Length Mean    0.0620
+Dst Port                  0.0619
+Bwd Packet Length Max     0.0434
+RST Flag Count            0.0387
+Bwd Init Win Bytes        0.0303
+SYN Flag Count            0.0296
+FWD Init Win Bytes        0.0245
+Fwd Packet Length Min     0.0242
+Packet Length Min         0.0203
+Fwd PSH Flags             0.0197
+PSH Flag Count            0.0184
+Bwd PSH Flags             0.0169
+Fwd Packet Length Max     0.0165
+Fwd Act Data Pkts         0.0159
+Total Fwd Packet          0.0158
+
+Top 3 por classe (estagio 2):
+                    classe  rank                   atributo  media_abs_shap
+               FTP-Patator     1      Fwd Packet Length Max        0.014405
+               FTP-Patator     2      Fwd Packet Length Std        0.014226
+               FTP-Patator     3                   Dst Port        0.012121
+               SSH-Patator     1      Fwd Packet Length Max        0.019047
+               SSH-Patator     2              Down/Up Ratio        0.013962
+               SSH-Patator     3                   Dst Port        0.013632
+             DoS GoldenEye     1     Bwd Packet Length Mean        0.021793
+             DoS GoldenEye     2      Bwd Packet Length Max        0.020714
+             DoS GoldenEye     3                Bwd IAT Std        0.016164
+                  DoS Hulk     1     Bwd Packet Length Mean        0.057755
+                  DoS Hulk     2               Flow Bytes/s        0.044765
+                  DoS Hulk     3      Fwd Packet Length Max        0.043365
+          DoS Slowhttptest     1      Bwd Packet Length Max        0.020968
+          DoS Slowhttptest     2      Fwd Packet Length Max        0.017885
+          DoS Slowhttptest     3     Bwd Packet Length Mean        0.017555
+             DoS slowloris     1      Fwd Packet Length Max        0.030703
+             DoS slowloris     2     Bwd Packet Length Mean        0.026540
+             DoS slowloris     3      Bwd Packet Length Max        0.025772
+                Heartbleed     1      Fwd Packet Length Std        0.007052
+                Heartbleed     2     Fwd Packet Length Mean        0.006243
+                Heartbleed     3               Flow Bytes/s        0.004633
+  Web Attack - Brute Force     1               Flow IAT Max        0.006939
+  Web Attack - Brute Force     2                   Dst Port        0.005890
+  Web Attack - Brute Force     3      Fwd Packet Length Max        0.005143
+          Web Attack - XSS     1               Flow Bytes/s        0.015796
+          Web Attack - XSS     2             RST Flag Count        0.008482
+          Web Attack - XSS     3     Bwd Packet Length Mean        0.007446
+Web Attack - Sql Injection     1              Flow Duration        0.004066
+Web Attack - Sql Injection     2             FIN Flag Count        0.003445
+Web Attack - Sql Injection     3      Fwd Packet Length Std        0.002301
+              Infiltration     1         FWD Init Win Bytes        0.008134
+              Infiltration     2     Bwd Packet Length Mean        0.007504
+              Infiltration     3                   Dst Port        0.007467
+                       Bot     1     Bwd Packet Length Mean        0.013657
+                       Bot     2             RST Flag Count        0.011559
+                       Bot     3      Bwd Packet Length Max        0.009401
+                  PortScan     1              Fwd PSH Flags        0.041568
+                  PortScan     2      Fwd Packet Length Max        0.036673
+                  PortScan     3 Total Length of Fwd Packet        0.034357
+                      DDoS     1 Total Length of Fwd Packet        0.041202
+                      DDoS     2      Fwd Packet Length Std        0.040333
+                      DDoS     3      Fwd Packet Length Max        0.039614
+
+2581 explicacoes locais salvas. Exemplo:
+ indice_original      classe_real  classe_prevista                                                                                                                                                                                             atributos_top
+          677578 DoS Slowhttptest DoS Slowhttptest       Bwd IAT Std (+14.89, shap +0.057); Bwd Init Win Bytes (-0.13, shap +0.056); Bwd Packet Length Mean (-0.65, shap -0.049); Flow IAT Max (+6.37, shap +0.035); FWD Init Win Bytes (+1.20, shap +0.030)
+          827990         DoS Hulk         DoS Hulk Bwd Packet Length Max (+1.91, shap +0.097); Bwd Packet Length Mean (+1.45, shap +0.095); RST Flag Count (+2.65, shap +0.042); Bwd Bulk Rate Avg (+2.11, shap +0.037); SYN Flag Count (+0.94, shap +0.031)
+          675767 DoS Slowhttptest DoS Slowhttptest       Bwd IAT Std (+15.73, shap +0.055); Bwd Init Win Bytes (-0.13, shap +0.054); Bwd Packet Length Mean (-0.65, shap -0.042); Flow IAT Max (+6.74, shap +0.037); FWD Init Win Bytes (+1.20, shap +0.030)
+
+Erros na amostra: 13 de 2893
+               classe_real classe_prevista  n
+  Web Attack - Brute Force          BENIGN  5
+          Web Attack - XSS          BENIGN  2
+                  PortScan          BENIGN  2
+             DoS slowloris          BENIGN  1
+          DoS Slowhttptest   DoS slowloris  1
+Web Attack - Sql Injection          BENIGN  1
+              Infiltration          BENIGN  1

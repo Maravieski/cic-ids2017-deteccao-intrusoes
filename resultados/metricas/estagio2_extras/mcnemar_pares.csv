@@ -1,0 +1,7 @@
+modelo_a,modelo_b,so_a_acerta,so_b_acerta,estatistica,p_valor,diferenca_acuracia
+rf_smote,et_smote,1,8,,0.0390625,-4.573898850187171e-06
+rf_smote,xgb_smote,7,7,,1.0,0.0
+rf_smote,knn_subamostra,137,3,126.35,2.5776669628604923e-29,8.755749227501156e-05
+et_smote,xgb_smote,9,2,,0.0654296875,4.573898850187171e-06
+et_smote,knn_subamostra,141,0,139.00709219858157,4.3887927037326323e-32,9.213139112519872e-05
+xgb_smote,knn_subamostra,141,7,119.52027027027027,8.056784478919637e-28,8.755749227501156e-05

@@ -1,0 +1,2 @@
+modelo_a,modelo_b,so_a_acerta,so_b_acerta,estatistica,p_valor,diferenca_acuracia
+rf_sem_balanceamento,rf_class_weight,1878,2935,231.69249948057345,2.5482523125035417e-52,-0.0006906587263782628

@@ -1,0 +1,9 @@
+Escolhidos: estagio 1 = rf_undersampling, estagio 2 = rf_smote, multiclasse direto = rf_class_weight
+
+Estagio 1 no teste: {'acuracia': 0.9949, 'precisao': 0.9743, 'revocacao': 0.9995, 'especificidade': 0.9938, 'f1': 0.9867, 'fnr': 0.0005, 'tss': 0.9933, 'auc': 0.9998, 'vp': 72965.0, 'fn': 34.0, 'fp': 1927.0, 'vn': 307680.0}
+Hierarquico (15 classes) no teste: {'acuracia': 0.9949, 'f1_macro': 0.9209, 'precisao_macro': 0.9267, 'revocacao_macro': 0.9169, 'especificidade_macro': 0.9996, 'tss_macro': 0.9165}
+Multiclasse direto no teste: {'acuracia': 0.9949, 'f1_macro': 0.9421, 'precisao_macro': 0.9866, 'revocacao_macro': 0.9171, 'especificidade_macro': 0.9996, 'tss_macro': 0.9167}
+
+McNemar hierarquico x direto: {'modelo_a': 'hierarquico', 'modelo_b': 'multiclasse_direto', 'so_a_acerta': 15, 'so_b_acerta': 27, 'estatistica': 2.880952380952381, 'p_valor': 0.0896329942678889, 'diferenca_acuracia': -3.1363857336267596e-05}
+
+Modelos salvos em dados/modelos

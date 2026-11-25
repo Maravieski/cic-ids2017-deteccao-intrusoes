@@ -1,0 +1,85 @@
+
+et_undersampling
+  fold 1/5: treino 39s, revocacao=0.9950, especificidade=0.9947, f1=0.9863
+  fold 2/5: treino 37s, revocacao=0.9946, especificidade=0.9950, f1=0.9867
+  fold 3/5: treino 37s, revocacao=0.9942, especificidade=0.9947, f1=0.9859
+  fold 4/5: treino 37s, revocacao=0.9949, especificidade=0.9947, f1=0.9863
+  fold 5/5: treino 33s, revocacao=0.9943, especificidade=0.9946, f1=0.9859
+                         media  desvio_padrao
+acuracia                0.9947         0.0001
+precisao                0.9780         0.0005
+revocacao               0.9946         0.0004
+especificidade          0.9947         0.0001
+f1                      0.9862         0.0003
+fnr                     0.0054         0.0004
+tss                     0.9893         0.0004
+auc                     0.9965         0.0002
+vp                  58082.2000        21.5105
+fn                    316.6000        21.6979
+fp                   1309.0000        33.2641
+vn                 246376.8000        33.4171
+tempo_treino_s         36.4765         2.3297
+tempo_previsao_s        1.1037         0.0360
+tamanho_modelo_mb     104.5391         1.1962
+
+xgb_undersampling
+  fold 1/5: treino 5s, revocacao=0.9998, especificidade=0.9941, f1=0.9875
+  fold 2/5: treino 5s, revocacao=0.9998, especificidade=0.9943, f1=0.9880
+  fold 3/5: treino 6s, revocacao=0.9996, especificidade=0.9941, f1=0.9875
+  fold 4/5: treino 6s, revocacao=0.9995, especificidade=0.9941, f1=0.9874
+  fold 5/5: treino 6s, revocacao=0.9998, especificidade=0.9940, f1=0.9873
+                         media  desvio_padrao
+acuracia                0.9952         0.0001
+precisao                0.9757         0.0005
+revocacao               0.9997         0.0001
+especificidade          0.9941         0.0001
+f1                      0.9875         0.0003
+fnr                     0.0003         0.0001
+tss                     0.9938         0.0002
+auc                     0.9999         0.0000
+vp                  58381.8000         7.2595
+fn                     17.0000         6.8920
+fp                   1455.6000        32.4392
+vn                 246230.2000        32.7368
+tempo_treino_s          5.5485         0.1232
+tempo_previsao_s        0.5233         0.0457
+tamanho_modelo_mb       4.1865         0.0060
+
+knn_subamostra
+  fold 1/5: treino 0s, revocacao=0.9974, especificidade=0.9925, f1=0.9831
+  fold 2/5: treino 0s, revocacao=0.9983, especificidade=0.9928, f1=0.9842
+  fold 3/5: treino 0s, revocacao=0.9978, especificidade=0.9925, f1=0.9833
+  fold 4/5: treino 0s, revocacao=0.9984, especificidade=0.9921, f1=0.9826
+  fold 5/5: treino 0s, revocacao=0.9987, especificidade=0.9921, f1=0.9829
+                         media  desvio_padrao
+acuracia                0.9935         0.0002
+precisao                0.9688         0.0012
+revocacao               0.9981         0.0005
+especificidade          0.9924         0.0003
+f1                      0.9832         0.0006
+fnr                     0.0019         0.0005
+tss                     0.9905         0.0005
+auc                     0.9980         0.0001
+vp                  58288.6000        29.1256
+fn                    110.2000        29.2524
+fp                   1879.8000        77.1829
+vn                 245806.0000        77.4048
+tempo_treino_s          0.2513         0.0567
+tempo_previsao_s      112.0484        14.4600
+tamanho_modelo_mb      22.0013         0.0000
+
+Comparativo (media dos folds, ordenado pelo F1):
+                       f1  acuracia  precisao  revocacao  especificidade     auc  tempo_treino_s  tempo_previsao_s
+xgb_undersampling  0.9875    0.9952    0.9757     0.9997          0.9941  0.9999          5.5485            0.5233
+rf_undersampling   0.9875    0.9952    0.9758     0.9996          0.9942  0.9998         27.9359            0.8570
+et_undersampling   0.9862    0.9947    0.9780     0.9946          0.9947  0.9965         36.4765            1.1037
+knn_subamostra     0.9832    0.9935    0.9688     0.9981          0.9924  0.9980          0.2513          112.0484
+
+McNemar:
+         modelo_a          modelo_b  so_a_acerta  so_b_acerta  estatistica       p_valor  diferenca_acuracia
+ rf_undersampling  et_undersampling         1483          725   259.533062  2.169192e-58            0.000495
+ rf_undersampling xgb_undersampling          125          132     0.140078  7.082037e-01           -0.000005
+ rf_undersampling    knn_subamostra         3058          478  1881.007070  0.000000e+00            0.001686
+ et_undersampling xgb_undersampling          791         1556   248.698764  4.990266e-56           -0.000500
+ et_undersampling    knn_subamostra         3573         1751   622.847671 1.796393e-137            0.001191
+xgb_undersampling    knn_subamostra         3063          476  1889.628709  0.000000e+00            0.001690

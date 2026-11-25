@@ -1,0 +1,7 @@
+modelo_a,modelo_b,so_a_acerta,so_b_acerta,estatistica,p_valor,diferenca_acuracia
+rf_class_weight,et_class_weight,4977,1848,1433.6093772893773,0.0,0.002044532786033665
+rf_class_weight,xgb_pesos_balanceados,25,60,13.6,0.0002261855258713229,-2.2869494250935854e-05
+rf_class_weight,knn_subamostra,7009,55,6843.74419592299,0.0,0.004543841800600227
+et_class_weight,xgb_pesos_balanceados,1825,4989,1468.2373055474025,0.0,-0.002067402280284601
+et_class_weight,knn_subamostra,8788,4963,1063.411824594575,2.9596351140679036e-233,0.002499309014566561
+xgb_pesos_balanceados,knn_subamostra,7037,48,6892.328016937191,0.0,0.004566711294851162

@@ -1,0 +1,71 @@
+classe,rank,atributo,media_abs_shap
+FTP-Patator,1,Fwd Packet Length Max,0.014404552549602621
+FTP-Patator,2,Fwd Packet Length Std,0.014225931169003007
+FTP-Patator,3,Dst Port,0.01212095127744366
+FTP-Patator,4,Total Length of Fwd Packet,0.012006568828404037
+FTP-Patator,5,Bwd Init Win Bytes,0.011724290036489013
+SSH-Patator,1,Fwd Packet Length Max,0.019046575742346767
+SSH-Patator,2,Down/Up Ratio,0.01396178100004663
+SSH-Patator,3,Dst Port,0.01363231880685377
+SSH-Patator,4,Flow Bytes/s,0.011020537952831526
+SSH-Patator,5,Bwd Packet Length Mean,0.010711721122443528
+DoS GoldenEye,1,Bwd Packet Length Mean,0.021792981890176442
+DoS GoldenEye,2,Bwd Packet Length Max,0.02071364754922862
+DoS GoldenEye,3,Bwd IAT Std,0.016164297118419647
+DoS GoldenEye,4,Fwd Packet Length Max,0.01564344915641993
+DoS GoldenEye,5,Flow Bytes/s,0.014596436768581052
+DoS Hulk,1,Bwd Packet Length Mean,0.05775492337674728
+DoS Hulk,2,Flow Bytes/s,0.044765099044415634
+DoS Hulk,3,Fwd Packet Length Max,0.04336483038822649
+DoS Hulk,4,Bwd Packet Length Max,0.03873969421479452
+DoS Hulk,5,Fwd Packet Length Std,0.03833463624800529
+DoS Slowhttptest,1,Bwd Packet Length Max,0.020967609487933622
+DoS Slowhttptest,2,Fwd Packet Length Max,0.017884741488353204
+DoS Slowhttptest,3,Bwd Packet Length Mean,0.01755480887741949
+DoS Slowhttptest,4,Flow IAT Max,0.010262461392730937
+DoS Slowhttptest,5,Fwd Packet Length Std,0.009924836358858297
+DoS slowloris,1,Fwd Packet Length Max,0.030702798148949554
+DoS slowloris,2,Bwd Packet Length Mean,0.026540165928785903
+DoS slowloris,3,Bwd Packet Length Max,0.02577234984318657
+DoS slowloris,4,Fwd Packet Length Std,0.015964037932499387
+DoS slowloris,5,Flow Bytes/s,0.013627766301585739
+Heartbleed,1,Fwd Packet Length Std,0.007051734133954497
+Heartbleed,2,Fwd Packet Length Mean,0.006243478840250106
+Heartbleed,3,Flow Bytes/s,0.004633310917432792
+Heartbleed,4,RST Flag Count,0.004389997786341288
+Heartbleed,5,Bwd Packet Length Max,0.0035310097999594675
+Web Attack - Brute Force,1,Flow IAT Max,0.006938524811018238
+Web Attack - Brute Force,2,Dst Port,0.005890066605500434
+Web Attack - Brute Force,3,Fwd Packet Length Max,0.005143106928742059
+Web Attack - Brute Force,4,RST Flag Count,0.005082407778764094
+Web Attack - Brute Force,5,Down/Up Ratio,0.004754034408263315
+Web Attack - XSS,1,Flow Bytes/s,0.015796087270680187
+Web Attack - XSS,2,RST Flag Count,0.008481778408216614
+Web Attack - XSS,3,Bwd Packet Length Mean,0.007445827358295365
+Web Attack - XSS,4,Fwd Packet Length Max,0.007334115295192944
+Web Attack - XSS,5,Bwd Init Win Bytes,0.005148118907346791
+Web Attack - Sql Injection,1,Flow Duration,0.004066441537762262
+Web Attack - Sql Injection,2,FIN Flag Count,0.0034449258068037876
+Web Attack - Sql Injection,3,Fwd Packet Length Std,0.002301042780845885
+Web Attack - Sql Injection,4,Fwd Packet Length Max,0.0020163047029539702
+Web Attack - Sql Injection,5,Flow Bytes/s,0.0018980131558337123
+Infiltration,1,FWD Init Win Bytes,0.008134129205378612
+Infiltration,2,Bwd Packet Length Mean,0.007504039337409363
+Infiltration,3,Dst Port,0.007467462351727632
+Infiltration,4,Fwd Seg Size Min,0.006596374572832711
+Infiltration,5,Bwd Packet Length Max,0.006592546219754583
+Bot,1,Bwd Packet Length Mean,0.013656849664716956
+Bot,2,RST Flag Count,0.01155884904828337
+Bot,3,Bwd Packet Length Max,0.009400615992294005
+Bot,4,Dst Port,0.009133413816620922
+Bot,5,Fwd Packet Length Mean,0.007266997931412202
+PortScan,1,Fwd PSH Flags,0.04156759043831273
+PortScan,2,Fwd Packet Length Max,0.036673058177320514
+PortScan,3,Total Length of Fwd Packet,0.034357352981892374
+PortScan,4,Fwd Packet Length Mean,0.03282914554132719
+PortScan,5,Fwd Packet Length Std,0.023332810029648765
+DDoS,1,Total Length of Fwd Packet,0.04120184862716394
+DDoS,2,Fwd Packet Length Std,0.04033344467715244
+DDoS,3,Fwd Packet Length Max,0.039614439400393046
+DDoS,4,Fwd Packet Length Mean,0.039479313896063885
+DDoS,5,Bwd Init Win Bytes,0.029971139865143385

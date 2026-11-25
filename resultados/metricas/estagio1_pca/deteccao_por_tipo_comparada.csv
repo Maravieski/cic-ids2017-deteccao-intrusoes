@@ -1,0 +1,16 @@
+Label_multiclasse,nome,suporte,detectados_rf_undersampling,detectados_pca27_undersampling,detectados_pca22_undersampling
+7,Heartbleed,9,7,7,7
+10,Web Attack - Sql Injection,10,7,0,1
+9,Web Attack - XSS,22,16,15,16
+11,Infiltration,26,21,11,9
+8,Web Attack - Brute Force,121,117,116,117
+12,Bot,590,587,585,586
+5,DoS Slowhttptest,1385,1382,1378,1381
+2,SSH-Patator,2384,2382,2380,2378
+6,DoS slowloris,2877,2873,2866,2863
+1,FTP-Patator,3178,3178,3176,3177
+3,DoS GoldenEye,6053,6053,6044,6010
+13,PortScan,72466,72371,70943,70943
+14,DDoS,76098,76098,76095,76095
+4,DoS Hulk,126775,126774,126772,126773
+0,BENIGN,1238429,7242,6620,6659

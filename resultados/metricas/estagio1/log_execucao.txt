@@ -1,0 +1,109 @@
+Treino: 1,530,423 fluxos, 51 atributos, 5 folds
+
+baseline_majoritaria
+  fold 1/5: treino 0s, revocacao=0.0000, especificidade=1.0000, f1=0.0000
+  fold 2/5: treino 0s, revocacao=0.0000, especificidade=1.0000, f1=0.0000
+  fold 3/5: treino 0s, revocacao=0.0000, especificidade=1.0000, f1=0.0000
+  fold 4/5: treino 0s, revocacao=0.0000, especificidade=1.0000, f1=0.0000
+  fold 5/5: treino 0s, revocacao=0.0000, especificidade=1.0000, f1=0.0000
+                         media  desvio_padrao
+acuracia                0.8092         0.0000
+precisao                0.0000         0.0000
+revocacao               0.0000         0.0000
+especificidade          1.0000         0.0000
+f1                      0.0000         0.0000
+fnr                     1.0000         0.0000
+tss                     0.0000         0.0000
+auc                     0.5000         0.0000
+vp                      0.0000         0.0000
+fn                  58398.8000         0.4472
+fp                      0.0000         0.0000
+vn                 247685.8000         0.4472
+tempo_treino_s          0.0917         0.0030
+tempo_previsao_s        0.0580         0.0024
+tamanho_modelo_mb       0.0006         0.0000
+
+rf_sem_balanceamento
+  fold 1/5: treino 91s, revocacao=0.9907, especificidade=0.9956, f1=0.9860
+  fold 2/5: treino 91s, revocacao=0.9889, especificidade=0.9960, f1=0.9860
+  fold 3/5: treino 94s, revocacao=0.9895, especificidade=0.9956, f1=0.9854
+  fold 4/5: treino 95s, revocacao=0.9901, especificidade=0.9955, f1=0.9856
+  fold 5/5: treino 106s, revocacao=0.9889, especificidade=0.9956, f1=0.9853
+                         media  desvio_padrao
+acuracia                0.9945         0.0001
+precisao                0.9817         0.0009
+revocacao               0.9896         0.0008
+especificidade          0.9957         0.0002
+f1                      0.9856         0.0004
+fnr                     0.0104         0.0008
+tss                     0.9853         0.0007
+auc                     0.9998         0.0000
+vp                  57792.8000        44.7236
+fn                    606.0000        44.8720
+fp                   1077.4000        51.8874
+vn                 246608.4000        51.9115
+tempo_treino_s         95.4168         6.1888
+tempo_previsao_s        0.8604         0.0364
+tamanho_modelo_mb      43.5151         1.7189
+
+rf_class_weight
+  fold 1/5: treino 94s, revocacao=0.9977, especificidade=0.9945, f1=0.9872
+  fold 2/5: treino 94s, revocacao=0.9994, especificidade=0.9943, f1=0.9878
+  fold 3/5: treino 93s, revocacao=0.9994, especificidade=0.9942, f1=0.9875
+  fold 4/5: treino 107s, revocacao=0.9993, especificidade=0.9942, f1=0.9875
+  fold 5/5: treino 87s, revocacao=0.9995, especificidade=0.9940, f1=0.9872
+                         media  desvio_padrao
+acuracia                0.9952         0.0001
+precisao                0.9761         0.0007
+revocacao               0.9990         0.0008
+especificidade          0.9942         0.0002
+f1                      0.9875         0.0002
+fnr                     0.0010         0.0008
+tss                     0.9933         0.0007
+auc                     0.9998         0.0000
+vp                  58343.2000        45.4885
+fn                     55.6000        45.5829
+fp                   1427.4000        42.6884
+vn                 246258.4000        43.0209
+tempo_treino_s         94.8841         7.0718
+tempo_previsao_s        1.0111         0.1325
+tamanho_modelo_mb      46.5738         2.3095
+
+rf_undersampling
+  fold 1/5: treino 28s, revocacao=0.9996, especificidade=0.9941, f1=0.9875
+  fold 2/5: treino 29s, revocacao=0.9998, especificidade=0.9943, f1=0.9880
+  fold 3/5: treino 29s, revocacao=0.9995, especificidade=0.9941, f1=0.9875
+  fold 4/5: treino 27s, revocacao=0.9992, especificidade=0.9942, f1=0.9875
+  fold 5/5: treino 27s, revocacao=0.9997, especificidade=0.9940, f1=0.9873
+                         media  desvio_padrao
+acuracia                0.9952         0.0001
+precisao                0.9758         0.0005
+revocacao               0.9996         0.0002
+especificidade          0.9942         0.0001
+f1                      0.9875         0.0003
+fnr                     0.0004         0.0002
+tss                     0.9937         0.0003
+auc                     0.9998         0.0000
+vp                  58373.2000        14.5155
+fn                     25.6000        14.1351
+fp                   1448.4000        28.6932
+vn                 246237.4000        29.0224
+tempo_treino_s         27.9359         0.8721
+tempo_previsao_s        0.8570         0.0127
+tamanho_modelo_mb      19.1749         0.8797
+
+Comparativo (media dos folds, ordenado pelo F1):
+                          f1  acuracia  precisao  revocacao  especificidade     fnr     tss     auc  tempo_treino_s
+rf_undersampling      0.9875    0.9952    0.9758     0.9996          0.9942  0.0004  0.9937  0.9998         27.9359
+rf_class_weight       0.9875    0.9952    0.9761     0.9990          0.9942  0.0010  0.9933  0.9998         94.8841
+rf_sem_balanceamento  0.9856    0.9945    0.9817     0.9896          0.9957  0.0104  0.9853  0.9998         95.4168
+baseline_majoritaria  0.0000    0.8092    0.0000     0.0000          1.0000  1.0000  0.0000  0.5000          0.0917
+
+McNemar entre pares de candidatos (previsoes fora do fold):
+            modelo_a             modelo_b  so_a_acerta  so_b_acerta   estatistica      p_valor  diferenca_acuracia
+baseline_majoritaria rf_sem_balanceamento         5387       288964 273195.429185 0.000000e+00           -0.185293
+baseline_majoritaria      rf_class_weight         7137       291716 270984.859058 0.000000e+00           -0.185948
+baseline_majoritaria     rf_undersampling         7242       291866 270839.469787 0.000000e+00           -0.185977
+rf_sem_balanceamento      rf_class_weight         1756         2758    221.976296 3.352059e-50           -0.000655
+rf_sem_balanceamento     rf_undersampling         1860         2907    229.518775 7.590847e-52           -0.000684
+     rf_class_weight     rf_undersampling          202          247      4.311804 3.784880e-02           -0.000029

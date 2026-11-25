@@ -1,0 +1,13 @@
+atributo,n_outliers,pct_outliers_da_base,pct_ataque_entre_outliers,pct_ataque_na_base,enriquecimento
+Flow Duration,297132,15.532,4.65,19.08,0.24
+Total Fwd Packet,174937,9.145,1.88,19.08,0.1
+Flow Bytes/s,377458,19.731,14.11,19.08,0.74
+Flow Packets/s,456358,23.855,22.33,19.08,1.17
+Packet Length Mean,328256,17.159,78.89,19.08,4.14
+SYN Flag Count,4699,0.246,3.55,19.08,0.19
+Fwd Packet Length Mean,177053,9.255,10.09,19.08,0.53
+Bwd Packet Length Mean,323171,16.893,80.13,19.08,4.2
+Flow IAT Mean,317021,16.572,7.23,19.08,0.38
+FWD Init Win Bytes,0,0.0,,19.08,
+Down/Up Ratio,267301,13.973,20.64,19.08,1.08
+ACK Flag Count,169479,8.859,1.84,19.08,0.1

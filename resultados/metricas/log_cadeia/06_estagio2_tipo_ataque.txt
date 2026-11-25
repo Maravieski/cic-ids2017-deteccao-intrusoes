@@ -1,0 +1,49 @@
+Estagio 1 usado: rf_undersampling
+
+rf_sem_balanceamento
+  fold 1/5: treino 8s, f1_macro estagio2=0.9646, final=0.9554
+  fold 2/5: treino 8s, f1_macro estagio2=0.9851, final=0.9885
+  fold 3/5: treino 8s, f1_macro estagio2=0.9483, final=0.9687
+  fold 4/5: treino 8s, f1_macro estagio2=0.9821, final=0.8309
+  fold 5/5: treino 8s, f1_macro estagio2=0.9526, final=0.9026
+                    media  desvio_padrao
+f1_macro_estagio2  0.9666         0.0167
+f1_macro_final     0.9292         0.0635
+acuracia_final     0.9952         0.0001
+tempo_treino_s     8.0829         0.2658
+
+rf_class_weight
+  fold 1/5: treino 5s, f1_macro estagio2=0.9795, final=0.9554
+  fold 2/5: treino 6s, f1_macro estagio2=0.9743, final=0.9813
+  fold 3/5: treino 5s, f1_macro estagio2=0.9723, final=0.9702
+  fold 4/5: treino 5s, f1_macro estagio2=0.9108, final=0.8308
+  fold 5/5: treino 5s, f1_macro estagio2=0.9525, final=0.9026
+                    media  desvio_padrao
+f1_macro_estagio2  0.9579         0.0282
+f1_macro_final     0.9281         0.0622
+acuracia_final     0.9952         0.0001
+tempo_treino_s     5.2725         0.5901
+
+rf_smote
+  fold 1/5: treino 11s, f1_macro estagio2=0.9795, final=0.9554
+  fold 2/5: treino 10s, f1_macro estagio2=0.9811, final=0.9886
+  fold 3/5: treino 10s, f1_macro estagio2=0.9707, final=0.9687
+  fold 4/5: treino 10s, f1_macro estagio2=0.9267, final=0.8383
+  fold 5/5: treino 11s, f1_macro estagio2=0.9072, final=0.9026
+                     media  desvio_padrao
+f1_macro_estagio2   0.9531         0.0339
+f1_macro_final      0.9307         0.0607
+acuracia_final      0.9952         0.0001
+tempo_treino_s     10.4048         0.2154
+
+Comparativo (media dos folds, ordenado pelo F1 macro da previsao final):
+                      f1_macro_estagio2  f1_macro_final  acuracia_final  tempo_treino_s
+rf_smote                         0.9531          0.9307          0.9952         10.4048
+rf_sem_balanceamento             0.9666          0.9292          0.9952          8.0829
+rf_class_weight                  0.9579          0.9281          0.9952          5.2725
+
+McNemar entre pares (previsao final em 15 classes):
+            modelo_a        modelo_b  so_a_acerta  so_b_acerta  estatistica  p_valor  diferenca_acuracia
+rf_sem_balanceamento rf_class_weight            5            5          NaN      1.0        0.000000e+00
+rf_sem_balanceamento        rf_smote            1            2          NaN      1.0       -6.534141e-07
+     rf_class_weight        rf_smote            5            6          NaN      1.0       -6.534141e-07

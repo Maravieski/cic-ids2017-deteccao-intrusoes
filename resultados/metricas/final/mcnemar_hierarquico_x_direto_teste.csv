@@ -1,0 +1,2 @@
+modelo_a,modelo_b,so_a_acerta,so_b_acerta,estatistica,p_valor,diferenca_acuracia
+hierarquico,multiclasse_direto,15,27,2.880952380952381,0.0896329942678889,-3.1363857336267596e-05

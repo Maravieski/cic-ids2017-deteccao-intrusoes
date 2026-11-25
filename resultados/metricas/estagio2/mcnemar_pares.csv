@@ -1,0 +1,4 @@
+modelo_a,modelo_b,so_a_acerta,so_b_acerta,estatistica,p_valor,diferenca_acuracia
+rf_sem_balanceamento,rf_class_weight,5,5,,1.0,0.0
+rf_sem_balanceamento,rf_smote,1,2,,1.0,-6.534141214553101e-07
+rf_class_weight,rf_smote,5,6,,1.0,-6.534141214553101e-07

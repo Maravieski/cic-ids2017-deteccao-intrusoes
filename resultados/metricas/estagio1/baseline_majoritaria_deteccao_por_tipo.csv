@@ -1,0 +1,16 @@
+Label_multiclasse,nome,previstos_como_ataque,suporte,taxa_deteccao
+0,BENIGN,0,1238429,0.0
+1,FTP-Patator,0,3178,0.0
+2,SSH-Patator,0,2384,0.0
+3,DoS GoldenEye,0,6053,0.0
+4,DoS Hulk,0,126775,0.0
+5,DoS Slowhttptest,0,1385,0.0
+6,DoS slowloris,0,2877,0.0
+7,Heartbleed,0,9,0.0
+8,Web Attack - Brute Force,0,121,0.0
+9,Web Attack - XSS,0,22,0.0
+10,Web Attack - Sql Injection,0,10,0.0
+11,Infiltration,0,26,0.0
+12,Bot,0,590,0.0
+13,PortScan,0,72466,0.0
+14,DDoS,0,76098,0.0

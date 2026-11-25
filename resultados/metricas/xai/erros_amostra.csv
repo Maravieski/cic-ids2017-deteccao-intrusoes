@@ -1,0 +1,8 @@
+classe_real,classe_prevista,n
+Web Attack - Brute Force,BENIGN,5
+Web Attack - XSS,BENIGN,2
+PortScan,BENIGN,2
+DoS slowloris,BENIGN,1
+DoS Slowhttptest,DoS slowloris,1
+Web Attack - Sql Injection,BENIGN,1
+Infiltration,BENIGN,1
