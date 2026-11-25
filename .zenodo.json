@@ -1,0 +1,24 @@
+{
+  "title": "Detecção de intrusões em rede no CIC-IDS2017 com classificação hierárquica em dois estágios",
+  "upload_type": "software",
+  "description": "<p>Classificação de tráfego de rede como benigno ou ataque, e identificação do tipo de ataque, sobre a versão corrigida do CIC-IDS2017 (Engelen, Rimmer e Joosen, 2021), com um pipeline hierárquico em dois estágios e um classificador multiclasse direto como referência. Inclui o código (scripts 01 a 13), as métricas e figuras geradas pelo pipeline, o relatório final, os slides da apresentação e o registro das decisões metodológicas.</p><p>Projeto da disciplina PTC3567 - Ciência dos Dados em Automação e Engenharia, Escola Politécnica da Universidade de São Paulo, 2º semestre de 2026, com os professores Pedro Luiz Pizzigatti Corrêa e Felipe Miguel Pait.</p><p>Código sob a licença MIT; documentos, figuras e resultados (docs/ e resultados/) sob CC BY 4.0.</p>",
+  "creators": [
+    {"name": "Teixeira, Bianca Repke", "affiliation": "Escola Politécnica da Universidade de São Paulo"},
+    {"name": "Maravieski, Eduardo", "affiliation": "Escola Politécnica da Universidade de São Paulo"},
+    {"name": "Lins, Gabriel Cesar de Almeida", "affiliation": "Escola Politécnica da Universidade de São Paulo"},
+    {"name": "Reis, Pedro de Lemos Barros", "affiliation": "Escola Politécnica da Universidade de São Paulo"}
+  ],
+  "license": "mit",
+  "language": "por",
+  "keywords": [
+    "detecção de intrusão",
+    "CIC-IDS2017",
+    "aprendizado de máquina",
+    "desbalanceamento de classes",
+    "SHAP"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.1109/SPW53761.2021.00009", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.5220/0006639801080116", "relation": "references", "scheme": "doi"}
+  ]
+}
