@@ -28,14 +28,16 @@ Conjunto de teste (20% estratificado, avaliado uma única vez):
 
 O gargalo está nas classes raras (XSS, SQL Injection, Infiltration, Web
 Attack Brute Force), que têm de 2 a 30 fluxos no teste. A discussão completa,
-com as hipóteses, as limitações e a comparação com PCA, está no relatório
-final, nos [slides da apresentação](docs/slides-apresentacao.pdf) e em
+com as hipóteses, as limitações e a comparação com PCA, está no
+[relatório final](docs/relatorio-final.pdf), nos
+[slides da apresentação](docs/slides-apresentacao.pdf) e em
 [`docs/DECISOES-E-BIBLIOGRAFIA.md`](docs/DECISOES-E-BIBLIOGRAFIA.md).
 
 ## Estrutura
 
 ```
 docs/
+  relatorio-final.pdf               relatório final do projeto (25/11/2026)
   slides-apresentacao.pdf           apresentação do projeto (18/11/2026)
   DECISOES-E-BIBLIOGRAFIA.md        cada decisão do pipeline, o motivo e a referência
   PROPOSTA-RAG-EXPLICACAO-ALERTAS.md  extensão proposta, não implementada
