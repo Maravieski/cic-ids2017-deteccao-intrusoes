@@ -1,5 +1,7 @@
 # Detecção de intrusões em rede no CIC-IDS2017
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24544341.svg)](https://doi.org/10.5281/zenodo.24544341)
+
 Classificação de tráfego de rede como benigno ou ataque, e identificação do
 tipo de ataque, sobre a versão corrigida do CIC-IDS2017 (Engelen, Rimmer &
 Joosen, 2021). O pipeline é hierárquico, em dois estágios: um classificador
